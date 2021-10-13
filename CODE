@@ -1,0 +1,15 @@
+const Discord = require('discord.js'); 
+
+const bot = new Discord.Client(); 
+
+const token = 'My token'; 
+
+bot.on('ready', () =>{
+        console.log('bot online');
+    }) 
+bot.on('message' , msg=>{ 
+    if(msg.content === 'hello'){
+       msg.reply('hi this is Zaks tunez bot'); 
+    }
+})
+Bot.login(token)
